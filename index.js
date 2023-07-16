@@ -11,11 +11,11 @@ document.querySelector(".img2").src = "./images/" + values[randomNumber2] + ".pn
 var player1 = values[randomNumber1];
 var player2 = values[randomNumber2];
 
-if(player1 == "stone" && player2 == "paper"){
+if(player1 == "stone" && player2 == "scissor"){
     document.querySelector("h1").innerHTML = "Player 1 wins";
 }
 
-else if(player1 == "stone" && player2 == "scissor"){
+else if(player1 == "stone" && player2 == "paper"){
     document.querySelector("h1").innerHTML = "Player 2 wins";
 }
 
@@ -38,15 +38,3 @@ else if(player1 == "scissor" && player2 == "stone"){
 else{
     document.querySelector("h1").innerHTML = "Draw";
 }
-
-// if(randomNumber1 > randomNumber2){
-//     document.querySelector("h1").innerHTML = "Player 1 wins";
-// }
-
-// else if(randomNumber2 > randomNumber1){
-//     document.querySelector("h1").innerHTML = "Player 2 wins";
-// }
-
-// else{
-//     document.querySelector("h1").innerHTML = "Draw";
-// }
